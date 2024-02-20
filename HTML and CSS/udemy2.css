@@ -1,0 +1,124 @@
+/*  * {
+    background-color: cyan;
+} */
+
+/* element selector */
+body {
+    background-color: #219ebc;
+}
+
+button {
+    font-size: 30px;
+    background-color: #8ecae6;
+}
+
+h1,
+h2 {
+    color: #023047;
+}
+
+/* id selector */
+#signup {
+    color: #8ecae6;
+    background-color: #023047;
+}
+
+span {
+    color: aqua;
+}
+
+/* class selector */
+.tag {
+    background-color: #bc6c25;
+    color: #f4a261;
+    font-size: 15px;
+}
+
+/* descendant selector */
+.post a {
+    color: beige;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a {
+    color: rgb(62, 52, 39);
+}
+
+/* adjacent selector */
+input+button {
+    color: chocolate;
+}
+
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* direct child */
+footer>a {
+    color: aqua;
+}
+
+/* attribute selector */
+
+input[type="password"] {
+    color: chartreuse;
+}
+
+section[class="post"] {
+    background-color: ;
+}
+
+
+
+a[href*="/Google"] {
+    color: magenta;
+}
+
+/* pseudo classes */
+.post button:hover {
+    background-color: #f4a261;
+    color: #f1faee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: cornflowerblue;
+}
+
+.post:nth-of-type(2n) {
+    background-color: darkgrey;
+}
+
+
+/* Pseudo Elements */
+h2::first-letter {
+    font-size: 50PX;
+}
+
+p::first-line {
+    color: #00b4d8;
+}
+
+::selection {
+    background-color: red;
+}
+
+h1,
+h2 {
+    color: yellow;
+}
+
+/* The more specific selector wins */
+button:hover {
+    background-color: olive;
+}
+
+/* important- included in the declaration. It ignores specificity 
+button {
+    background-color: magenta !important;
+} */
